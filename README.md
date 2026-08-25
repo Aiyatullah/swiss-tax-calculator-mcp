@@ -1,6 +1,6 @@
 # Swiss Tax Calculator — MCP Server & Python API
 
-> Inspired by [noaahh/estv-mcp](https://github.com/noaahh/estv-mcp). Licensed under MIT by [Zeel Saiyed](https://github.com/aiyatullah).
+>Licensed under MIT by [Zeel Saiyed](https://github.com/aiyatullah).
 
 A dual-purpose Swiss tax toolkit: use it as a **Python API client** in your applications, or run it as an **MCP server** for AI assistants like Claude. Wraps the official [ESTV Swiss Federal Tax Calculator](https://swisstaxcalculator.estv.admin.ch/) — no API key or authentication required.
 
