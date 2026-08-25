@@ -1,0 +1,39 @@
+[project]
+name = "swiss-tax-calculator-mcp"
+version = "1.0.0"
+description = "Swiss Tax Calculator — MCP Server & Python API for the official ESTV federal tax calculator"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Aiyatullah Saiyed" },
+]
+keywords = ["swiss", "tax", "estv", "mcp", "calculator", "switzerland"]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.2.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+estv-mcp = "estv_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/estv_mcp"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+ignore = ["E501"]  # descriptive Field(...) strings run long by design
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

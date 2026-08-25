@@ -1,0 +1,149 @@
+{
+  "tax_year": 2024,
+  "data_version": "api 1.7.2 (22.09.2021)",
+  "cases": {
+    "single_120k_zurich": {
+      "tool": "calculate_tax",
+      "values": {
+        "total_tax": 16668,
+        "by_level.federal": 2902,
+        "by_level.cantonal": 6206,
+        "by_level.municipal": 7536,
+        "taxable.income_cantonal": 101475,
+        "rates_percent.marginal_on_income": 26.2
+      }
+    },
+    "family_zug_with_3a_and_wealth": {
+      "tool": "calculate_tax",
+      "values": {
+        "total_tax": 5435,
+        "by_level.church": 137,
+        "by_object.wealth_tax": 0,
+        "taxable.income_cantonal": 61227
+      }
+    },
+    "pensioner_bern": {
+      "tool": "calculate_tax",
+      "values": {
+        "total_tax": 17222,
+        "by_level.cantonal": 10154,
+        "taxable.income_federal": 87300
+      }
+    },
+    "taxable_amounts_zurich": {
+      "tool": "calculate_tax_from_taxable_amounts",
+      "values": {
+        "total_tax": 16360,
+        "by_object.income_tax": 16206,
+        "by_object.wealth_tax": 130
+      }
+    },
+    "capitals_ranking_150k": {
+      "tool": "compare_locations",
+      "values": {
+        "count": 26,
+        "statistics.min": 13437,
+        "statistics.median": 26180,
+        "statistics.max": 33650,
+        "cheapest.0.municipality": "Zug"
+      }
+    },
+    "canton_zg_ranking": {
+      "tool": "compare_locations",
+      "values": {
+        "count": 11,
+        "statistics.min": 23671,
+        "cheapest.0.municipality": "Baar",
+        "most_expensive.0.municipality": "Neuheim"
+      }
+    },
+    "capital_payment_zurich": {
+      "tool": "calculate_capital_payment_tax",
+      "values": {
+        "result.total_tax": 35839,
+        "result.federal": 10537,
+        "result.cantonal": 11427,
+        "result.effective_rate_percent": 7.17
+      }
+    },
+    "withdrawal_plan_600k": {
+      "tool": "plan_capital_withdrawals",
+      "values": {
+        "plans.0.total_tax": 50506,
+        "plans.1.total_tax": 36815,
+        "plans.2.total_tax": 34112,
+        "max_saving": 16394
+      }
+    },
+    "deduction_3a_value": {
+      "tool": "deduction_value",
+      "values": {
+        "steps.0.total_tax": 16668,
+        "steps.4.total_tax": 15101,
+        "total_saving_at_max": 1567
+      }
+    },
+    "inheritance_zurich_relationships": {
+      "tool": "calculate_inheritance_tax",
+      "values": {
+        "count": 38,
+        "results.0.total_tax": 0,
+        "results.37.total_tax": 140400
+      }
+    },
+    "inheritance_unrelated_capitals": {
+      "tool": "calculate_inheritance_tax",
+      "values": {
+        "count": 26,
+        "statistics.min": 0,
+        "statistics.median": 143700,
+        "statistics.max": 268295
+      }
+    },
+    "company_zurich": {
+      "tool": "calculate_company_tax",
+      "values": {
+        "result.total_tax": 39298,
+        "result.profit_tax": 39196,
+        "result.capital_tax": 102,
+        "result.effective_rate_on_profit_percent": 19.65
+      }
+    },
+    "company_capitals": {
+      "tool": "calculate_company_tax",
+      "values": {
+        "count": 26,
+        "statistics.min": 118736,
+        "statistics.max": 202480,
+        "cheapest.0.canton": "ZG"
+      }
+    },
+    "brackets_zurich_cantonal": {
+      "tool": "explain_tax_brackets",
+      "values": {
+        "simple_tax": 6207,
+        "current_band.from": 75400,
+        "current_band.to": 109000,
+        "current_band.rate_percent": 9,
+        "amount_to_next_band": 9000
+      }
+    },
+    "brackets_zurich_federal": {
+      "tool": "explain_tax_brackets",
+      "values": {
+        "simple_tax": 2737,
+        "current_band.from": 81000,
+        "current_band.rate_percent": 6.6
+      }
+    },
+    "nearby_zurich_hb": {
+      "tool": "find_cheapest_nearby",
+      "values": {
+        "municipalities_priced": 34,
+        "statistics.min": 20213,
+        "statistics.max": 25442,
+        "cheapest.0.municipality": "Kilchberg (ZH)"
+      }
+    }
+  }
+}
