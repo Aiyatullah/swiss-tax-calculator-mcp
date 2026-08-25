@@ -286,5 +286,3 @@ Tests run on Python 3.11/3.12/3.13 on every push, plus a weekly schedule to catc
 ## License
 
 MIT License — see [LICENSE](LICENSE).
-
-Inspired by and built upon [noaahh/estv-mcp](https://github.com/noaahh/estv-mcp).
